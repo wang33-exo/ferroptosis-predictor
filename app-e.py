@@ -33,7 +33,7 @@ DATA_DIR = BASE_DIR / "data"
 
 # Fallback directory for local development. Remove this branch for deployment,
 # keeping only relative path data/.
-DATA_DIR = Path("D:/ferroptosis_app/").resolve().parent / "data"
+DATA_DIR = Path(__file__).resolve().parent / "data"
 
 st.set_page_config(
     page_title="Ferroptosis Predictor | Breast Cancer Prognostic Model",
